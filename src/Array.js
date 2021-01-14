@@ -13,9 +13,7 @@ function Login(props) {
   return (
     <div className="app">
       <div className="bg"></div>
-      <div className="bg2">
-        <form className="bg1">
-          <div className="inputs">
+        <form >
             <input
               type="text"
               name=""
@@ -30,7 +28,7 @@ function Login(props) {
             />
             <input type="text" name="" placeholder="email" />
             <input type="text" name="" placeholder="adhar number" />
-            <div style={{ display: "flex", flexDirection: "row" }}>
+            <div style={{ display: "flex", flexDirection: "row",border:"1px solid black" }} >
               <input type="radio" value="male" name="gender" />
               Male
               <input type="radio" value="male" name="gender" />
@@ -44,11 +42,9 @@ function Login(props) {
               <a href="#">Forgot password?</a>
             </p>
             <button style={{ width: "120px", marginTop: "-30px" }}>
-              Submit
+              Registration
             </button>
-          </div>
         </form>
-      </div>
     </div>
   );
 }
